@@ -30,6 +30,7 @@ void	_heredoc_child(t_noeud	*n, t_heredoc_data	*hd)
 		}
 	}
 	free (hd);
+	data = get_data(NULL);
 	ft_free(data->env);
 	ft_free_lstenv(data->env_lst);
 	sortir_propre(n, 0);

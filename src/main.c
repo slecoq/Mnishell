@@ -116,6 +116,14 @@ t_noeud	*create_arbre(t_tok *tok_root, t_data *data)
 	return (root);
 }
 
+t_data *get_data(t_data *d)
+{
+	static t_data *data;
+	if (d)
+		data = d;
+	return (data);
+}
+
 int	main(int ac, char **av, char **env)
 {
 	t_tok		*tok_root;
@@ -136,7 +144,7 @@ int	main(int ac, char **av, char **env)
 	ft_memset(&data, 0, sizeof(t_data));
 	data.env_lst = init_env(env);
 	data.env = new_env(data.env_lst);
-
+	get_data(&data);
 //	************************** DEBUT ***********************************
 	int	fd ;
 	if (ac==2)

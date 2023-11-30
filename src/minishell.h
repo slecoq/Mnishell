@@ -102,6 +102,8 @@ void			ft_init_signals(void);
 void			_gestion_assignation_export(t_tok *t, t_data *data);
 void			_gestion_export_var(t_tok *t, t_data *data);
 
+t_data			*get_data(t_data *d);
+
 # ifndef DEBUG_EXP
 #  define DEBUG_EXP 0
 # endif

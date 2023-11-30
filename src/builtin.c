@@ -12,26 +12,27 @@ int	bi_cd(t_noeud	*n, t_env *env_lst)
 	int		ret;
 	char	*dir;
 	char	*old;
+	t_env	*new_oldpwd;
+	t_env	*new_pwd;
 
+	old = getcwd(NULL, 0);
+	if (!n->args[1])
+		ret = chdir(get_var_env(env_lst, "HOME"));
 	if (n && n->args[1] && n->args[1]->val)
 	{
 		dir = n->args[1]->val;
 		if (ft_strnstr(n->args[1]->val, "~", 1) != 0)
 			dir = get_var_env(env_lst, "HOME");
 		else if (ft_strnstr(n->args[1]->val, "-", 1) != 0)
-		{
 			dir = get_var_env(env_lst, "OLDPWD");
-			if (ft_strnstr(dir, "OLDPWD", ft_strlen("OLDPWD")) == 0)
-				printf("minishell : cd: \"OLDPWD\" non défini");
-			else
-				printf("%s\n", dir);
-		}
-		else if (ft_strlen(n->args[1]->val) == 0)
-			dir = get_var_env(env_lst, "HOME");
-		old = getcwd(NULL, 0);
 		ret = chdir(dir);
-		add_var_env(env_lst, lstnew_env(ft_strdup("OLDPWD"), old, 0));
 	}
+	new_oldpwd = lstnew_env(ft_strdup("OLDPWD"), old, 1);
+	new_pwd = lstnew_env(ft_strdup("PWD"), getcwd(NULL, 0), 1);
+	add_var_env(env_lst, new_pwd);
+	add_var_env(env_lst, new_oldpwd);
+	ft_free_cell(new_oldpwd);
+	ft_free_cell(new_pwd);
 	return (ret);
 }
 
@@ -89,8 +90,8 @@ int	bi_unset(t_noeud *n, t_data *data)
 		{
 			while (tmp->args[++i])
 			{
-				if (ft_strncmp(data->env_lst->name, tmp->args[i]->val,
-						ft_strlen(data->env_lst->name)) == 0)
+				if (ft_strncmp(data->env_lst->name, tmp->args[i]->val, \
+				ft_strlen(data->env_lst->name)) == 0)
 					data->env_lst->b_global = 0;
 			}
 			i = -1;

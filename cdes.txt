@@ -21,10 +21,9 @@ ls|grep root>>t.txt
 cat t.txt
 ls -al -h
 rev </etc/passwd
-echo "toto titi"
   atest=toto
    da"ns $PWD, voilà" !
-  echo  da\'ns "$PWD," voilà\' !
+
 echo     da"ns $PWD, voilà" !
 echo     "   $PWD, voilà" !
 echo     '   $PWD, voilà' !

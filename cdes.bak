@@ -29,7 +29,6 @@ echo     da"ns $PWD, voilà" !
 echo     "   $PWD, voilà" !
 echo     '   $PWD, voilà' !
 echo "fred
-
 echo "mic'mac" dis donc' là
   a=1
   b=2
@@ -46,7 +45,6 @@ env |grep 'PWD'
   cd $d
   pwd
   echo "$PWD $a$b$c"
-
 
 rev<<.
 rev <<. < heredoc_test.txt

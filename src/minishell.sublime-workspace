@@ -1,0 +1,831 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ft_str",
+				"ft_strlen"
+			],
+			[
+				"ft_",
+				"ft_strdup"
+			],
+			[
+				"f",
+				"ft_putnbr"
+			],
+			[
+				"ft",
+				"ft_foreach"
+			],
+			[
+				"x",
+				"xx"
+			],
+			[
+				"in",
+				"index_lines"
+			],
+			[
+				"read",
+				"read_file"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.c",
+			"settings":
+			{
+				"buffer_size": 5157,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "clean.c",
+			"settings":
+			{
+				"buffer_size": 622,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/tests.sh",
+			"settings":
+			{
+				"buffer_size": 150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "execute_utils.c",
+			"settings":
+			{
+				"buffer_size": 3004,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/cdes.txt",
+			"settings":
+			{
+				"buffer_size": 32,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "execute.c",
+			"settings":
+			{
+				"buffer_size": 2354,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "builtin.c",
+			"settings":
+			{
+				"buffer_size": 183,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 86 files for \"perror\"\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/minishell:\n    <binary>\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/test.c:\n   18: \tperror(\"execve\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute.c:\n   45: \t\tperror(\"Commande introuvable.\");\n   91: \t\t// \tperror(\"[interprete]\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute_utils.c:\n   15: \t\t\tperror(\"execve\");\n   25: \t\tperror(\"execve\");\n  161: \t\t\tperror(\"\");\n  163: \t\t\tperror(s);\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/main.c:\n  234: \t\t// perror(\"\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/pipe.c:\n    9: \t\tperror(\"Fork child 1 \");\n   24: \t\tperror(\"Fork child 2 \");\n   42: \t\tperror(\"Pipe \");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/libft.h.gch:\n    <binary>\n\n15 matches across 7 files\n\n\nSearching 86 files for \"perror\"\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/minishell:\n    <binary>\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/test.c:\n   18: \tperror(\"execve\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute.c:\n   45: \t\tperror(\"Commande introuvable.\");\n   91: \t\t// \tperror(\"[interprete]\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute_utils.c:\n   15: \t\t\tperror(\"execve\");\n   25: \t\tperror(\"execve\");\n  161: \t\t\tperror(\"\");\n  163: \t\t\tperror(s);\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/main.c:\n  234: \t\t// perror(\"\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/libft.h.gch:\n    <binary>\n\n12 matches across 6 files\n\n\nSearching 86 files for \"perror\"\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/minishell:\n    <binary>\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute.c:\n   91: \t\t// \tperror(\"[interprete]\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute_utils.c:\n  161: \t\t\tperror(\"\");\n  163: \t\t\tperror(s);\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/main.c:\n  234: \t\t// perror(\"\");\n\n/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/libft.h.gch:\n    <binary>\n\n8 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 2084,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "pipe.c",
+			"settings":
+			{
+				"buffer_size": 2097,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "minishell.h",
+			"settings":
+			{
+				"buffer_size": 3030,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/fred.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/fred.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"plu",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"",
+				"Build With: C Single File - Run"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Typedef"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/lib",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft"
+	],
+	"file_history":
+	[
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/test.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/token.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/factory.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/clean.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/ft_strlcpy.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/d.txt",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/cdes.txt",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/builtin.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/cdes.bak",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/execute_utils.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/Makefile",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/minishell.h",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/ft_split.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/pipe.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/val.sh",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/get_next_line.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/get_next_line.h",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/get_next_line_utils.c",
+		"/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/minishell.sublime-project",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex01/Brain.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex02/AAnimal.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex02/AAnimal.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/AMateria.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/ICharacter.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/AMateria.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/Character.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/Character.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/Cure.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/IMateriaSource.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex03/main.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex01/Animal.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex01/Cat.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex02/main.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex01/main.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex01/Animal.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/Makefile",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/Animal.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/Animal.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/Dog.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/Dog.hpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/main.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/WrongAnimal.cpp",
+		"/nfs/homes/fbourgue/repocorr/jcasades/ex00/Cat.cpp",
+		"/nfs/homes/fbourgue/repocorr/iarrar/Makefile",
+		"/nfs/homes/fbourgue/repocorr/iarrar/manipulations.c",
+		"/nfs/homes/fbourgue/repocorr/iarrar/mini_sort_bis.c",
+		"/nfs/homes/fbourgue/repocorr/iarrar/radix.c",
+		"/nfs/homes/fbourgue/sgoinfre/fbourgue/.zshrc.swp",
+		"/nfs/homes/fbourgue/myrepo/corre/philo/instructions2.c",
+		"/nfs/homes/fbourgue/.var/app/com.sublimetext.three/config/sublime-text-3/Packages/User/fred.sublime-build",
+		"/nfs/homes/fbourgue/myrepo/c08/ex05/ft_show_tab.c",
+		"/nfs/homes/fbourgue/myrepo/c00/ex07/ft_putnbr.c",
+		"/nfs/homes/fbourgue/myrepo/bsq (copy)/inc/utils.h",
+		"/nfs/homes/fbourgue/myrepo/bsq (copy)/src/utils.c",
+		"/nfs/homes/fbourgue/myrepo/c11/ex05/do-op.c",
+		"/nfs/homes/fbourgue/myrepo/c11/ex01/ft_map.c",
+		"/nfs/homes/fbourgue/myrepo/c11/ex00/ft_foreach.c",
+		"/nfs/homes/fbourgue/myrepo/c02/ex01/ft_strncpy.c"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"perror",
+			"line_copy",
+			"if",
+			"sout",
+			"NULL"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1633,
+								1633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2145.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "clean.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 622,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/tests.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "execute_utils.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/cdes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "execute.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1197,
+								1197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "builtin.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2084,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										172,
+										178
+									],
+									[
+										264,
+										270
+									],
+									[
+										310,
+										316
+									],
+									[
+										415,
+										421
+									],
+									[
+										442,
+										448
+									],
+									[
+										470,
+										476
+									],
+									[
+										492,
+										498
+									],
+									[
+										577,
+										583
+									],
+									[
+										660,
+										666
+									],
+									[
+										694,
+										700
+									],
+									[
+										728,
+										734
+									],
+									[
+										1032,
+										1038
+									],
+									[
+										1124,
+										1130
+									],
+									[
+										1170,
+										1176
+									],
+									[
+										1275,
+										1281
+									],
+									[
+										1302,
+										1308
+									],
+									[
+										1330,
+										1336
+									],
+									[
+										1352,
+										1358
+									],
+									[
+										1437,
+										1443
+									],
+									[
+										1748,
+										1754
+									],
+									[
+										1853,
+										1859
+									],
+									[
+										1875,
+										1881
+									],
+									[
+										1960,
+										1966
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								1856,
+								1856
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 754.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "pipe.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								944,
+								944
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "minishell.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2779,
+								2779
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 975.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 345.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "minishell.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
