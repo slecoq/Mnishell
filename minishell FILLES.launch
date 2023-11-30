@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.cdt.launch.applicationLaunchType">
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.AUTO_SOLIB" value="true"/>
+    <listAttribute key="org.eclipse.cdt.dsf.gdb.AUTO_SOLIB_LIST"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="gdb"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_ON_FORK" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.GDB_INIT" value=".gdbinit"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.NON_STOP" value="true"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.REVERSE" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.REVERSE_MODE" value="UseSoftTrace"/>
+    <listAttribute key="org.eclipse.cdt.dsf.gdb.SOLIB_PATH"/>
+    <stringAttribute key="org.eclipse.cdt.dsf.gdb.TRACEPOINT_MODE" value="TP_NORMAL_ONLY"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="true"/>
+    <booleanAttribute key="org.eclipse.cdt.dsf.gdb.internal.ui.launching.LocalApplicationCDebuggerTab.DEFAULTS_SET" value="true"/>
+    <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="0"/>
+    <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="gdb"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="cdes.txt"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="minishell"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="minishell_24nov-main"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/minishell_24nov-main"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.core.source_locator_id" value="org.eclipse.cdt.debug.core.sourceLocator"/>
+    <stringAttribute key="org.eclipse.debug.core.source_locator_memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;sourceLookupDirector&gt;&#10;    &lt;sourceContainers duplicates=&quot;false&quot;&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;project name=&amp;quot;minishell_24nov-main&amp;quot; referencedProjects=&amp;quot;false&amp;quot;/&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.sourceFoldersRelativePath&quot;/&gt;&#10;        &lt;container memento=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt;&amp;#10;&amp;lt;mapping backend_enabled=&amp;quot;true&amp;quot; name=&amp;quot;Found Mappings&amp;quot;&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/fbourgue/0-wsp/minishell-ref/&amp;amp;quot; localPath=&amp;amp;quot;/home/fbourgue/0-wsp/minishell-ref/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/fbourgue/0-wsp/minishell/src/&amp;amp;quot; localPath=&amp;amp;quot;/home/fbourgue/0-wsp/minishell/src/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/fbourgue/0-wsp/FdF/src/libft/&amp;amp;quot; localPath=&amp;amp;quot;/home/fbourgue/0-wsp/minishell/src/libft/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/fbourgue/0-git_repository/minishell/src/&amp;amp;quot; localPath=&amp;amp;quot;/home/fbourgue/0-git_repository/minishell/src/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/nfs/homes/fbourgue/0-myrepo/42-Cursus/minishell/src/libft/&amp;amp;quot; localPath=&amp;amp;quot;/home/fbourgue/0-git_repository/minishell/src/libft/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;    &amp;lt;mapEntry memento=&amp;quot;&amp;amp;lt;?xml version=&amp;amp;quot;1.0&amp;amp;quot; encoding=&amp;amp;quot;UTF-8&amp;amp;quot; standalone=&amp;amp;quot;no&amp;amp;quot;?&amp;amp;gt;&amp;amp;#10;&amp;amp;lt;mapEntry backendPath=&amp;amp;quot;/home/fbourgue/0-wsp/bac_\303\240_sable/minishell_24nov-main/sources/&amp;amp;quot; localPath=&amp;amp;quot;/home/fbourgue/0-wsp/bac_à_sable/minishell_24nov-main/sources/&amp;amp;quot;/&amp;amp;gt;&amp;amp;#10;&amp;quot;/&amp;gt;&amp;#10;&amp;lt;/mapping&amp;gt;&amp;#10;&quot; typeId=&quot;org.eclipse.cdt.debug.core.containerType.mapping&quot;/&gt;&#10;    &lt;/sourceContainers&gt;&#10;&lt;/sourceLookupDirector&gt;&#10;"/>
+    <listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+        <listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+        <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;memoryBlockExpressionList context=&quot;reserved-for-future-use&quot;/&gt;"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.DefaultEvent" value="true"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.HideUnresolvedSymbols" value="true"/>
+    <stringAttribute key="org.eclipse.linuxtools.internal.perf.attr.Kernel.Location" value=""/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.Kernel.SourceLineNumbers" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.ModuleSymbols" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.MultipleEvents" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.Multiplex" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.Record.Realtime" value="false"/>
+    <intAttribute key="org.eclipse.linuxtools.internal.perf.attr.Record.Realtime.Priority" value="1"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.Record.Verbose" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.ShowSourceDisassembly" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.ShowStat" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.internal.perf.attr.SourceLineNumbers" value="true"/>
+    <intAttribute key="org.eclipse.linuxtools.internal.perf.attr.StatRunCount" value="1"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.FULLPATH_AFTER" value="true"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_BELOWMAIN" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_DEMANGLE" value="true"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_DSYMUTIL" value="true"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_ERRLIMIT" value="true"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_FREERES" value="true"/>
+    <intAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_MAINSTACK" value="0"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_MAINSTACK_BOOL" value="false"/>
+    <intAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_MAXFRAME" value="2000000"/>
+    <intAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_NUMCALLERS" value="12"/>
+    <stringAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_OTHER_OPTIONS" value=""/>
+    <listAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_SUPPFILES"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.launch.GENERAL_TRACECHILD" value="true"/>
+    <stringAttribute key="org.eclipse.linuxtools.valgrind.launch.OUTPUT_DIR" value="/home/fbourgue/0-wsp/.metadata/.plugins/org.eclipse.linuxtools.valgrind.launch"/>
+    <stringAttribute key="org.eclipse.linuxtools.valgrind.launch.TOOL" value="org.eclipse.linuxtools.valgrind.launch.memcheck"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_ALIGNMENT_BOOL" value="false"/>
+    <intAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_ALIGNMENT_VAL" value="0"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_FREEFILL_BOOL" value="false"/>
+    <stringAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_FREEFILL_VAL" value=""/>
+    <intAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_FREELIST" value="10000000"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_GCCWORK" value="false"/>
+    <listAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_IGNORE_RANGES"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_LEAKCHECK" value="true"/>
+    <stringAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_LEAKRES" value="high"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_MALLOCFILL_BOOL" value="false"/>
+    <stringAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_MALLOCFILL_VAL" value=""/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_PARTIAL" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_POSSIBLY_LOST" value="true"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_SHOWREACH" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_TRACKORIGINS" value="false"/>
+    <booleanAttribute key="org.eclipse.linuxtools.valgrind.memcheck.MEMCHECK_UNDEF" value="true"/>
+    <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+    <stringAttribute key="provider" value="org.eclipse.linuxtools.profiling.provider.valgrind.memcheck"/>
+</launchConfiguration>
