@@ -11,9 +11,10 @@ int	is_heredoc_delim(char *s, char	*p_fin)
 	return (found == 0);
 }
 
-void	_heredoc_child(t_noeud	*n,t_heredoc_data	*hd)
+void	_heredoc_child(t_noeud	*n, t_heredoc_data	*hd)
 {
-	t_data *data;
+	t_data	*data;
+
 	hd->acc = ft_strdup("");
 	close(hd->fd_pipe[0]);
 	while (1)

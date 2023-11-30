@@ -63,18 +63,21 @@ t_grab_res	*grab(char **s)
 
 	gr = grab_res_create();
 	quote_res = quotes(s);
+	if (errno != 0)
+		return (NULL);
 	if (quote_res && quote_res->quote_deb == *s)
 	{
 		gr->b_expanse_allowed = quote_res->b_in_single_quotes == 0;
 		if (! quote_res->quote_fin)
-			quote_res->quote_fin = ft_strchr(quote_res->quote_deb + 1, '\n');
+			quote_res->quote_fin = ft_strchr(quote_res->quote_deb + 1, '\0');
 		len_sub = quote_res->quote_fin - quote_res->quote_deb - 1;
 		gr->val = ft_substr(*s, quote_res->quote_deb - *s + 1, len_sub);
 		(*s) += ft_strlen(gr->val) + 2 ;
 		free (quote_res);
 		return (gr);
 	}
-	gr->b_expanse_allowed = quote_res->b_in_single_quotes == 0;
+	if (quote_res)
+		gr->b_expanse_allowed = quote_res->b_in_single_quotes == 0;
 	gr->val = _grab_to_sep(s);
 	free (quote_res);
 	return (gr);

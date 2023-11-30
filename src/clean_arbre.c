@@ -31,7 +31,7 @@ void	kill_noeud(t_noeud *n)
 	n = NULL;
 }
 
-t_noeud*	_kill_noeuds_suivants(t_noeud *n)
+t_noeud	*_kill_noeuds_suivants(t_noeud *n)
 {
 	while (n)
 	{

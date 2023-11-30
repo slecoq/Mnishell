@@ -36,16 +36,6 @@ void	kill_tok(t_tok *tok_depart)
 		dprintf(2, "-TOK killing %s\n", t->val);
 	if (t && t->val)
 		free(t->val);
-//	if (t)
-		free(t);
-		t = NULL;
-}
-
-void	sortir_propre(t_noeud	*n, int exit_code)
-{
-	if (DEBUG_CLEAN)
-				dprintf(2, "sortir_propre : t=%s n=%s\n", n->tok->val, n->str_valeur);
-	kill_tok(n->tok);
-	kill_arbre(n);
-	exit(exit_code);
+	free(t);
+	t = NULL;
 }

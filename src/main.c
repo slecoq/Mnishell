@@ -36,10 +36,14 @@ t_tok	*parse(char *s_init)
 		if(! **s)
 			break ;
 		gr =grab(s);
+		if (! gr)
+			return (NULL);
 		tok_val = gr->val;
 		save_tok_val = tok_val;
 		tok = create_tok(&tok_val, tok_last);
 		tok->b_expanse_allowed = gr->b_expanse_allowed;
+		if (gr->b_quote_err_micmac)
+			tok->b_quote_err_micmac = 1;
 //		if (gr->b_val_a_free)
 //			free (gr->val);
 		free (gr);
@@ -54,7 +58,7 @@ t_tok	*parse(char *s_init)
 	return (tok_root);
 }
 
-t_noeud	*create_AST(t_tok *tok_root, t_data *data)
+t_noeud	*create_arbre(t_tok *tok_root, t_data *data)
 {
 	t_noeud	*n;
 	t_noeud	*root;
@@ -163,22 +167,20 @@ int	main(int ac, char **av, char **env)
 			ft_sigquit_handler();
 			break ;
 		}
-		add_history(line);
 		tok_root = parse(line);
 		free(line);
-		noeud_root = create_AST(tok_root, &data);
-		dup2(1, save_out);
-		dup2(0, save_in);
-		interprete(0, noeud_root, &data);
-		kill_tok(tok_root);
-		kill_arbre(noeud_root);
-
-//	************************** DEBUT ***********************************
-		if (ac==2)
-			line = get_next_line(fd);
-//	************************* FIN ***********************************
-		dup2(save_out, 1);
-		dup2(save_in, 0);
+		if (tok_root)
+		{
+			noeud_root = create_arbre(tok_root, &data);
+			dup2(1, save_out);
+			dup2(0, save_in);
+			interprete(0, noeud_root, &data);
+			kill_tok(tok_root);
+			kill_arbre(noeud_root);
+			dup2(save_out, 1);
+			dup2(save_in, 0);
+		}
+		errno = 0;
 	}
 	ft_free_lstenv(data.env_lst);
 	ft_free(data.env);

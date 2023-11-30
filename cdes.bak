@@ -29,7 +29,22 @@ echo     da"ns $PWD, voilà" !
 echo     "   $PWD, voilà" !
 echo     '   $PWD, voilà' !
 echo "fred
+echo "mic'mac" dis donc' là
+  a=1
+  b=2
+  c=3
+  echo "$a$b$c"
+  echo "$a'$b" dis $c' là
+echo bonjour | cat
+env |grep 'PWD'
 
+  a=1
+  b=2
+  c=3
+  d=/
+  cd $d
+  pwd
+  echo "$PWD $a$b$c"
 
 rev<<.
 rev <<. < heredoc_test.txt

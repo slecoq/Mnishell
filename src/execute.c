@@ -33,9 +33,18 @@ void	_interprete_equal(int b_global, t_noeud *n, t_env *new_entry,
 	}
 	b_global = 0;
 	new_entry = lstnew_env (ft_strdup (n->noeud_gauche->str_valeur),
-	ft_strdup (n->noeud_droit->str_valeur), b_global);
+			ft_strdup (n->noeud_droit->str_valeur), b_global);
 	add_var_env (data->env_lst, new_entry);
-	ft_free_cell(new_entry);
+}
+
+void	_traite_heredoc(t_noeud *n)
+{
+	if (n->delim_heredoc)
+	{
+		my_heredoc (n);
+		dup2 (n->fd_input, STDIN_FILENO);
+		close (n->fd_input);
+	}
 }
 
 void	_dup_close_ios(t_noeud *n)
@@ -50,4 +59,13 @@ void	_dup_close_ios(t_noeud *n)
 		dup2 (n->fd_input, STDIN_FILENO);
 		close (n->fd_input);
 	}
+}
+
+void	sortir_propre(t_noeud	*noeud_depart, int exit_code)
+{
+	if (DEBUG_CLEAN)
+		dprintf(2, "sortir_propre : t=%s n=%s\n", noeud_depart->tok->val, noeud_depart->str_valeur);
+	kill_tok(noeud_depart->tok);
+	kill_arbre(noeud_depart);
+	exit(exit_code);
 }

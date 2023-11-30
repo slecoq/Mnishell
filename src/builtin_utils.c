@@ -48,5 +48,4 @@ void	_gestion_export_var(t_tok *t, t_data *data)
 		}
 		data->env_lst = head_lst;
 		t = t->suivant;
-	}
 }

@@ -38,7 +38,6 @@ void	_capture(t_parse_res *pr, char *s_start_with_$)
 	pr ->s_captured = var_name;
 	pr->fin_pre = s_start_with_$;
 	pr->deb_post = sep;
-//	pr->post = sep;
 }
 
 t_parse_res	*_get_next_var(char *s)
@@ -107,6 +106,29 @@ void	concat(char **s1, char *s2)
 	}
 }
 
+t_parse_res* _process_next_var (int last_exec_status, t_parse_res *pr, char **s,
+        t_env *env_lst)
+{
+	pr = _get_next_var (*s);
+	if (pr->s_captured)
+	{
+		free (pr->s_rempl);
+		if (ft_strncmp (pr->s_captured, "$?", 2) == 0)
+			pr->s_rempl = ft_itoa (last_exec_status);
+		else
+			pr->s_rempl = ft_strdup (
+			        get_var_env (env_lst, (pr->s_captured) + 1));
+
+		if (DEBUG_EXP)
+		{
+			dprintf (2, "\trempl.\t[%s] <= [%s]\n", pr->s_captured,
+			        pr->s_rempl);
+			dprintf (2, "\tstatic\t [%s]\n", pr->s_pre);
+		}
+	}
+	return pr;
+}
+
 char	*_parse(char **s, t_env *env_lst, int last_exec_status)
 {
 	t_parse_res	*pr;
@@ -120,26 +142,12 @@ char	*_parse(char **s, t_env *env_lst, int last_exec_status)
 	new = ft_strdup("");
 	while(s && *s && **s)
 	{
-		pr = _get_next_var(*s);
-		if (pr->s_captured)
-		{
-			free (pr->s_rempl);
-			if (ft_strncmp(pr->s_captured, "$?", 2) == 0)
-				pr->s_rempl = ft_itoa(last_exec_status);
-			else
-				pr->s_rempl = ft_strdup(get_var_env(env_lst, (pr->s_captured) + 1));
-			if (DEBUG_EXP)
-			{
-				dprintf(2, "\trempl.\t[%s] <= [%s]\n", pr->s_captured,pr->s_rempl);
-				dprintf(2, "\tstatic\t [%s]\n", pr->s_pre);
-			}
-		}
+		pr = _process_next_var (last_exec_status, pr, s, env_lst);
 		concat(&new, pr->s_pre);
 		concat(&new, pr->s_rempl);
 		concat(&new, pr->deb_post);
 		sz = ft_strlen(pr->s_pre) + ft_strlen(pr->s_captured)+ ft_strlen(pr->deb_post);
 		*s += sz;
-
 		free (pr->s_captured);
 		free (pr->s_pre);
 		free (pr->s_rempl);
@@ -156,36 +164,20 @@ void	expand(t_noeud *n, t_env *env_lst, int last_exec_status)
 	t_arg	**arg_save;
 	char	*copy;
 
-//	copy = (n->str_valeur);
 	if (n->b_expanse_allowed)
 	{
 		save = _parse(&n->str_valeur, env_lst, last_exec_status);
 		free (n->str_valeur);
 		n->str_valeur = save;
 	}
-//	free (copy);
 	arg_save = n->args;
-	while (n && arg_save && *arg_save && (*arg_save)->b_expanse_allowed)
+	while (n && arg_save
+			&& (*arg_save && (*arg_save)->b_expanse_allowed))
 	{
 		arg = *arg_save;
-
-//		if (n->tok->mismatch_res && (! n->tok->mismatch_res->b_no_mismatch))
-//		{
-//			while (1)
-//			{
-//				char *line = readline("> ");
-//	 			if (ft_strchr(line, n->tok->mismatch_res->quote_manquante))
-//	 			{
-//
-//	 				break ;
-//	 			}
-//			}
-//		}
-
 		save = _parse(&arg->val, env_lst, last_exec_status);
 		(*arg_save)->val = save;
 		(*arg_save)->b_val_a_free = 1;
 		(arg_save)++;
 	}
-//	n->args = arg_save;
 }

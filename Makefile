@@ -4,10 +4,10 @@ NAME = minishell
 SRCS =   main.c token.c factory.c builtin.c execute.c execute_utils.c \
 	pipe.c debug.c clean.c parse_utils.c quotes.c free.c manip_env.c \
 	manip_lst.c manip_var.c utils.c expand.c signal.c heredoc.c clean_arbre.c \
-	interprete.c builtin_utils.c
+	interprete.c builtin_utils.c execute_utils2.c factory2.c quotes2.c
 	
 OBJS = $($(addprefix src/,${SRCS}):.c=.o)
-INC  = src/minishell.h /usr/include/readline/readline.h src/struct.h
+INC  = src/minishell.h /usr/include/readline/readline.h src/struct_minishell.h
 
 LIBFT_NAME = lib/libft.a
 LIBFT = src/libft
