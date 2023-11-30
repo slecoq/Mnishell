@@ -78,6 +78,7 @@ t_env			*add_var_env(t_env *env_lst, t_env *var);
 t_env			*remove_var_env(t_env *env_lst, t_env *var);
 
 char			*get_var_env(t_env *env_lst, char *name);
+char			*get_value_if_global(t_env *env, char *name);
 
 t_env			*ft_lstlast(t_env *lst);
 void			ft_lstadd_back(t_env **lst, t_env *new);

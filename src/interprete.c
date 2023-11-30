@@ -26,7 +26,7 @@ int	_interpret_ext(int piped, t_noeud	*n, t_data *data)
 	char	**args;
 
 	res = -1;
-	path_env = getenv("PATH");
+	path_env = get_value_if_global(data->env_lst, "PATH");
 	exe_path = find_exe(path_env, n->str_valeur);
 	args = _tabbed_args_val(n->args);
 	if (exe_path != NULL)

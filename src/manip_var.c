@@ -44,3 +44,16 @@ char	*get_name(char *str)
 	new_str[i] = '\0';
 	return (new_str);
 }
+
+char	*get_value_if_global(t_env *env, char *name)
+{
+	while (env)
+	{
+		if (!ft_strncmp(env->name, name, ft_strlen(name)) && env->b_global)
+		{
+			return (env->value);
+		}
+		env = env->next;
+	}
+	return (name);
+}
